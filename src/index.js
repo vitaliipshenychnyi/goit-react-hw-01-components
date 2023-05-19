@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'; // видалити
+import ReactDOM from 'react-dom/client'; // видалити
 import { App } from 'components/App';
 import './index.css';
 
