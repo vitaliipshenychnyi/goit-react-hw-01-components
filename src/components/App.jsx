@@ -9,18 +9,7 @@ import transactions from './transactionhistory/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 100,
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-        margin: 50,
-      }}
-    >
+    <>
       <Profile
         src={user.avatar}
         username={user.username}
@@ -36,6 +25,6 @@ export const App = () => {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </div>
+    </>
   );
 };

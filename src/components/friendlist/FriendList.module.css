@@ -21,6 +21,14 @@
   margin-bottom: 20px;
 }
 
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
 .status {
   border-radius: 50%;
   width: 30px;

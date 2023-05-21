@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
+import clsx from 'clsx';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -7,8 +8,12 @@ export const FriendList = ({ friends }) => {
       {friends.map(friend => (
         <li className={css.item} key={friend.id}>
           <span
-            className={css.status}
-            style={{ backgroundColor: friend.isOnline ? 'green' : 'red' }}
+            className={
+              clsx(css.status, friend.isOnline ? css.green : css.red)
+              // friend.isOnline
+              //   ? `${css.status} ${css.green}`
+              //   : `${css.status} ${css.red}`
+            }
           ></span>
           <img
             className={css.avatar}
